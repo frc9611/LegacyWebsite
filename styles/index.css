@@ -12,6 +12,7 @@
     --light-black-text: #858585;
     --cr-yellow: #FFC450;
     --cr-purple: #34024B;
+    --cr-light-purple: #56007e;
     --transparent: #0000;
     --crescendo-theme: #01D485;
 }
@@ -28,6 +29,59 @@ a {
 
 .highlighted-text {
     color: var(--cr-yellow) !important;
+}
+
+/* Components */
+
+.yellow-unfilled-button {
+    transition: color 0.15s ease-in;
+    width: fit-content;
+    color: var(--cr-yellow);
+    font-size: 5rem;
+    border: 1rem solid var(--cr-yellow);
+    border-radius: 2rem;
+    padding: 1rem 5rem;
+}
+
+.yellow-unfilled-button:hover {
+    color: var(--black-text);
+    background-color: var(--cr-yellow);
+}
+
+.purple-unfilled-button {
+    transition: color 0.15s ease-in;
+    width: fit-content;
+    color: var(--cr-purple);
+    font-weight: 600;
+    font-size: 5rem;
+    border: 1rem solid var(--cr-purple);
+    border-radius: 2rem;
+    padding: 1rem 5rem;
+}
+
+.purple-unfilled-button:hover {
+    color: var(--white-text);
+    background-color: var(--cr-purple);
+}
+
+.purple-filled-button {
+    transition: color 0.15s ease-in;
+    width: fit-content;
+    color: var(--white-text);
+    background-color: var(--cr-purple);
+    font-weight: 600;
+    font-size: 5rem;
+    border: 1rem solid var(--cr-purple);
+    border-radius: 2rem;
+    padding: 1rem 5rem;
+}
+
+.purple-filled-button:hover {
+    transition: color 0.15s ease-in;
+    color: var(--white-text);
+    background-color: var(--cr-light-purple);
+    border-color: var(--cr-light-purple);
+    text-shadow: var(--white-text) 0px 0px 4px;
 }
 
 /* Header   */
@@ -102,20 +156,6 @@ a {
     width: 100%;
 }
 
-.yellow-unfilled-button {
-    transition: color 0.15s ease-in;
-    color: var(--cr-yellow);
-    font-size: 5rem;
-    border: 1rem solid var(--cr-yellow);
-    border-radius: 2rem;
-    padding: 1rem 5rem;
-}
-
-.yellow-unfilled-button:hover {
-    color: var(--black-text);
-    background-color: var(--cr-yellow);
-}
-
 /* Footer */
 
 .footer {
@@ -185,9 +225,9 @@ a {
 }
 
 .crescendo-about-text {
-    width: 105rem;
+    width: 110rem;
     color: var(--white-text);
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 .crescendo-about-texts-wrapper {
@@ -224,4 +264,59 @@ a {
     color: var(--white-text);
     font-size: 3.5rem;
     color: var(--light-black-text);
+}
+
+/* About CyberRain */
+
+.cr-about-section {
+    width: 100%;
+}
+
+.cr-about-section {
+    padding: 17rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cr-about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.cr-identity-wrapper {
+    width: 105rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cr-identity-name {
+    font-size: 8rem;
+    color: var(--black-text);
+    font-weight: bold;
+}
+
+.cr-identity-number {
+    font-size: 8rem;
+    color: var(--black-text);
+    font-weight: bold;
+}
+
+.cr-identity-number::before {
+    font-size: 6rem;
+    color: var(--light-black-text);
+    font-weight: 500;
+    content: "#";
+}
+
+.cr-about-text {
+    color: var(--black-text);
+    font-size: 5rem;
+    width: 105rem;
+}
+
+.cr-about-buttons-wrapper {
+    display: flex;
+    gap: 4.5rem;
 }
