@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-size: 4px;
+}
+
+:root {
+    --white-text: #f5f5f5;
+    --black-text: #202020;
+    --light-black-text: #858585;
+    --cr-yellow: #FFC450;
+    --cr-purple: #34024B;
+    --transparent: #0000;
+    --crescendo-theme: #01D485;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Misc */
+
+.highlighted-text {
+    color: var(--cr-yellow) !important;
+}
+
+/* Header   */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--cr-purple);
+    padding: 0 8rem;
+}
+
+.cr-info-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 30rem;
+    aspect-ratio: 1 / 1;
+}
+
+.team-name-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.cr-team-number {
+    color: var(--white-text);
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.cr-team-name {
+    color: var(--white-text);
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+
+.menu-pages-wrapper {
+    display: flex;
+    gap: 5rem;
+}
+
+.menu-page {
+    position: relative;
+    color: var(--white-text);
+    font-size: 5rem;
+}
+
+.menu-page::after {
+    transition-property: width;
+    transition: width 0.2s ease-out;
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 1rem;
+    background-color: #f5f5f5;
+    color: var(--transparent);
+    content: "🌝";
+}
+
+.menu-page:hover::after {
+    display: block;
+    width: 100%;
+}
+
+.yellow-unfilled-button {
+    transition: color 0.15s ease-in;
+    color: var(--cr-yellow);
+    font-size: 5rem;
+    border: 1rem solid var(--cr-yellow);
+    border-radius: 2rem;
+    padding: 1rem 5rem;
+}
+
+.yellow-unfilled-button:hover {
+    color: var(--black-text);
+    background-color: var(--cr-yellow);
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    background-color: var(--cr-purple);
+    width: 100%;
+    height: 100rem;
+}
+
+/* Carrousel */
+
+.cr-carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 10 / 3;
+    background: url("./../assets/cr-team.png");
+    background-size: cover;
+}
+
+.cr-carrousel-texts-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cr-carrousel-big-text {
+    color: var(--white-text);
+    font-size: 25rem;
+    font-weight: 600;
+}
+
+.cr-carrousel-text {
+    color: var(--white-text);
+    font-size: 12rem;
+    font-weight: 600;
+}
+
+/* About FRC */
+
+.first-about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50rem;
+    padding: 20rem 0;
+}
+
+.first-about-text {
+    width: 105rem;
+    color: var(--black-text);
+    font-size: 5rem;
+}
+
+/* About Crescendo */
+
+.crescendo-about-section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url("./../assets/crescendo-wp.jpg");
+    background-size: contain;
+    width: 100%;
+    height: 265rem;
+    padding: 0 0 15rem;
+}
+
+.crescendo-about-text {
+    width: 105rem;
+    color: var(--white-text);
+    font-size: 5rem;
+}
+
+.crescendo-about-texts-wrapper {
+    display: flex;
+    gap: 25rem;
+}
+
+.creascendo-meaning-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 150rem;
+}
+
+.crescendo-meaning {
+    color: var(--crescendo-theme);
+    font-weight: bold;
+    font-size: 10rem;
+    line-height: 9rem;
+}
+
+.creascendo-meaning-context {
+    color: var(--white-text);
+    font-size: 7rem;
+    font-weight: bolder;
+}
+
+.crescendo-meaning-source-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 0;
+}
+
+.crescendo-meaning-source {
+    color: var(--white-text);
+    font-size: 3.5rem;
+    color: var(--light-black-text);
+}
