@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Humaroid';
+    src: url('../assets/fonts/Humaroid.woff2') format('woff2'),
+        url('../assets/fonts/Humaroid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -14,7 +23,7 @@
     --cr-yellow: #FFC450;
     --cr-purple: #34024B;
     --cr-light-purple: #4d0070;
-    --cr-ultra-ligh-purple: #d6ccdb;
+    --cr-ultra-light-purple: #d6ccdb;
     --transparent: #0000;
     --crescendo-theme: #01D485;
 }
@@ -128,14 +137,18 @@ a {
 
 .cr-team-number {
     color: var(--white-text);
+    font-family: "Humaroid";
     font-size: 8rem;
-    font-weight: bold;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .cr-team-name {
     color: var(--white-text);
+    font-family: "Humaroid";
     font-size: 8rem;
-    font-weight: bold;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .nav-wrapper {
@@ -178,7 +191,16 @@ a {
     display: flex;
     background-color: var(--cr-purple);
     width: 100%;
-    height: 100rem;
+    height: 45rem;
+}
+
+.slogan {
+    font-family: "Humaroid";
+    font-size: 8rem;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+
 }
 
 /* Carrousel */
@@ -201,13 +223,13 @@ a {
 
 .cr-carrousel-big-text {
     color: var(--white-text);
-    font-size: 25rem;
+    font-size: 16rem;
     font-weight: 600;
 }
 
 .cr-carrousel-text {
     color: var(--white-text);
-    font-size: 12rem;
+    font-size: 8rem;
     font-weight: 600;
 }
 
@@ -237,14 +259,15 @@ a {
     background: url("./../assets/crescendo-wp.jpg");
     background-size: contain;
     width: 100%;
-    height: 265rem;
+    aspect-ratio: 8/4.5;
     padding: 0 0 15rem;
 }
 
 .crescendo-about-text {
+    margin-top: 4rem;
     width: 110rem;
     color: var(--white-text);
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 600;
 }
 
@@ -262,7 +285,7 @@ a {
 .crescendo-meaning {
     color: var(--crescendo-theme);
     font-weight: bold;
-    font-size: 10rem;
+    font-size: 6rem;
     line-height: 9rem;
 }
 
@@ -352,11 +375,12 @@ a {
 .cr-about-blob {
     width: 100rem;
 }
+
 .cr-about-blob-complement {
     display: block;
     height: 175;
     width: 100%;
-    background-color: var(--cr-ultra-ligh-purple);
+    background-color: var(--cr-ultra-light-purple);
     content: "🌝";
     color: var(--transparent);
 }
