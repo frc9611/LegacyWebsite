@@ -13,7 +13,8 @@
     --light-black-text: #858585;
     --cr-yellow: #FFC450;
     --cr-purple: #34024B;
-    --cr-light-purple: #56007e;
+    --cr-light-purple: #4d0070;
+    --cr-ultra-ligh-purple: #d6ccdb;
     --transparent: #0000;
     --crescendo-theme: #01D485;
 }
@@ -77,10 +78,11 @@ a {
 .purple-unfilled-button:hover {
     color: var(--white-text);
     background-color: var(--cr-purple);
+    text-shadow: var(--white-text) 0px 0px 3px;
 }
 
 .purple-filled-button {
-    transition: color 0.15s ease-in;
+    transition: all 0.1s ease-in;
     width: fit-content;
     color: var(--white-text);
     background-color: var(--cr-purple);
@@ -92,11 +94,10 @@ a {
 }
 
 .purple-filled-button:hover {
-    transition: color 0.15s ease-in;
     color: var(--white-text);
     background-color: var(--cr-light-purple);
     border-color: var(--cr-light-purple);
-    text-shadow: var(--white-text) 0px 0px 4px;
+    text-shadow: var(--white-text) 0px 0px 3px;
 }
 
 /* Header   */
@@ -224,6 +225,7 @@ a {
     width: 105rem;
     color: var(--black-text);
     font-size: 5rem;
+    font-weight: 600;
 }
 
 /* About Crescendo */
@@ -243,6 +245,7 @@ a {
     width: 110rem;
     color: var(--white-text);
     font-size: 6rem;
+    font-weight: 600;
 }
 
 .crescendo-about-texts-wrapper {
@@ -284,17 +287,21 @@ a {
 /* About CyberRain */
 
 .cr-about-section {
+    position: relative;
+    background-repeat: no-repeat;
     width: 100%;
-    padding: 17rem 0;
+    height: 175rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .cr-about-wrapper {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    margin: 0 0 0 140rem;
 }
 
 .cr-identity-wrapper {
@@ -333,4 +340,23 @@ a {
 .cr-about-buttons-wrapper {
     display: flex;
     gap: 4.5rem;
+}
+
+.cr-about-decoration-blob {
+    position: absolute;
+    left: 0;
+    display: flex;
+    width: 45vw;
+}
+
+.cr-about-blob {
+    width: 100rem;
+}
+.cr-about-blob-complement {
+    display: block;
+    height: 175;
+    width: 100%;
+    background-color: var(--cr-ultra-ligh-purple);
+    content: "🌝";
+    color: var(--transparent);
 }
