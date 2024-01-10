@@ -7,6 +7,62 @@
     font-display: swap;
 }
 
+@keyframes cr-transparent-logo-80rem-floating {
+    0% {
+        transform: rotate(4deg);
+    }
+
+    50% {
+        transform: rotate(-4deg);
+    }
+
+    100% {
+        transform: rotate(4deg);
+    }
+}
+
+@keyframes cr-transparent-logo-60rem-floating {
+    0% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+        transform: rotate(-4deg);
+    }
+}
+
+@keyframes cr-transparent-logo-40rem-floating {
+    0% {
+        transform: rotate(4deg);
+    }
+
+    50% {
+        transform: rotate(-4deg);
+    }
+
+    100% {
+        transform: rotate(4deg);
+    }
+}
+
+@keyframes cr-transparent-logo-20rem-floating {
+    0% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+        transform: rotate(-4deg);
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -22,7 +78,7 @@
     --light-black-text: #858585;
     --cr-yellow: #FFC450;
     --cr-purple: #34024B;
-    --cr-light-purple: #4d0070;
+    --cr-light-purple: #9f64bb;
     --cr-ultra-light-purple: #d6ccdb;
     --transparent: #0000;
     --crescendo-theme: #01D485;
@@ -53,6 +109,11 @@ a {
     display: flex;
     justify-content: center;
     width: 42.5rem !important;
+}
+
+.small-icon {
+    width: 6rem;
+    aspect-ratio: 1 / 1;
 }
 
 /* Components */
@@ -189,9 +250,14 @@ a {
 
 .footer {
     display: flex;
+    justify-content: center;
     background-color: var(--cr-purple);
     width: 100%;
-    height: 45rem;
+    height: 64.5rem;
+    display: flex;
+    gap: 17.5rem;
+    padding-top: 11rem;
+    padding-left: 9rem;
 }
 
 .slogan {
@@ -199,8 +265,105 @@ a {
     font-size: 8rem;
     font-weight: normal;
     font-style: normal;
-    color: white;
+    color: var(--white-text);
+    line-height: 7rem;
+}
 
+.slogan-wrapper {
+    margin-bottom: 4rem;
+}
+
+.copyright {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--cr-yellow);
+}
+
+.footer-section-contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.footer-section-location {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.footer-section-promotional {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-section-social-media-list {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-section-title {
+    transition: all 0.2s ease;
+    position: relative;
+    font-size: 5rem;
+    color: var(--cr-yellow);
+    font-weight: 600;
+    width: fit-content;
+}
+
+.footer-section-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.footer-section-item {
+    font-size: 5rem;
+    color: var(--cr-ultra-light-purple);
+    font-weight: 600;
+    line-height: 4.5rem;
+}
+
+.footer-section-item:hover {
+    text-decoration: underline;
+}
+
+.footer-section-newsletter-text {
+    position: relative;
+    font-size: 5rem;
+    color: var(--white-text);
+    font-weight: 600;
+}
+
+.footer-section-newsletter-text::after {
+    content: "➡";
+    color: var(--cr-yellow);
+    width: 4rem;
+    aspect-ratio: 1 / 1;
+    margin: 0 0 0 2rem;
+}
+
+.footer-section-newsletter-text::before {
+    position: relative;
+    top: 5.5rem;
+    transition-property: width;
+    transition: width 0.2s ease-out;
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 1rem;
+    background-color: var(--cr-ultra-light-purple);
+    color: var(--transparent);
+    content: "🌝";
+}
+
+.footer-section-newsletter-text:hover {
+    color: var(--cr-ultra-light-purple);
+}
+
+.footer-section-newsletter-text:hover::before {
+    display: block;
+    width: 90%;
 }
 
 /* Carrousel */
@@ -248,6 +411,7 @@ a {
     color: var(--black-text);
     font-size: 5rem;
     font-weight: 600;
+    text-align: justify;
 }
 
 /* About Crescendo */
@@ -360,6 +524,13 @@ a {
     text-align: justify;
 }
 
+.cr-about-wrapper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .cr-about-buttons-wrapper {
     display: flex;
     gap: 4.5rem;
@@ -369,7 +540,8 @@ a {
     position: absolute;
     left: 0;
     display: flex;
-    width: 45vw;
+    align-items: center;
+    width: 140rem;
 }
 
 .cr-about-blob {
@@ -378,9 +550,41 @@ a {
 
 .cr-about-blob-complement {
     display: block;
-    height: 175;
+    height: 175rem;
     width: 100%;
     background-color: var(--cr-ultra-light-purple);
-    content: "🌝";
-    color: var(--transparent);
+}
+
+.cr-black-transparent-logo {
+    position: absolute;
+    right: 18rem;
+    display: block;
+}
+
+.cr-black-transparent-logo-80rem {
+    animation: 7s none 0s infinite cr-transparent-logo-80rem-floating;
+    width: 80rem;
+    height: 85rem;
+    transform: rotate(4deg);
+}
+
+.cr-black-transparent-logo-60rem {
+    animation: 10s none 0s infinite cr-transparent-logo-60rem-floating;
+    width: 60rem;
+    height: 65rem;
+    transform: rotate(-4deg);
+}
+
+.cr-black-transparent-logo-40rem {
+    animation: 10s none 0s infinite cr-transparent-logo-40rem-floating;
+    width: 40rem;
+    height: 45rem;
+    transform: rotate(4deg);
+}
+
+.cr-black-transparent-logo-20rem {
+    animation: 10s none 0s infinite cr-transparent-logo-20rem-floating;
+    width: 20rem;
+    height: 25rem;
+    transform: rotate(-4deg);
 }
