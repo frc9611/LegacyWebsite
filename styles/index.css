@@ -394,6 +394,7 @@ a {
 
 .footer-sections-grouper > section {
     width: 66rem;
+    height: fit-content;
 }
 
 .slogan {
@@ -521,6 +522,10 @@ a {
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
+}
+
+.mobile-link-tree {
+    display: none;
 }
 
 @media (max-width: 700px) {
