@@ -246,18 +246,39 @@ a {
     width: 100%;
 }
 
+@media (max-width: 1150px) {
+    .header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .nav-wrapper {
+        display: none;
+    }
+}
+
 /* Footer */
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     background-color: var(--cr-purple);
     width: 100%;
-    height: 64.5rem;
+    height: fit-content;
     display: flex;
-    gap: 17.5rem;
-    padding-top: 11rem;
-    padding-left: 9rem;
+    gap: 15rem;
+    padding: 12rem 5.5rem;
+}
+
+.footer-sections-grouper {
+    display: flex;
+    gap: 15rem;
+    flex-wrap: wrap;
+}
+
+.footer-sections-grouper > section {
+    width: 66rem;
 }
 
 .slogan {
@@ -270,7 +291,10 @@ a {
 }
 
 .slogan-wrapper {
+    display: flex;
+    align-items: center;
     margin-bottom: 4rem;
+    height: 100%;
 }
 
 .copyright {
@@ -300,6 +324,13 @@ a {
 .footer-section-social-media-list {
     display: flex;
     gap: 1.5rem;
+}
+
+.small-icon[src="./assets/tba-lamp.svg"],
+.small-icon[src="./assets/email-icon.png"] {
+    border: 3px solid var(--white-text);
+    border-radius: 1.5rem;
+    padding: .5rem;
 }
 
 .footer-section-title {
@@ -366,6 +397,51 @@ a {
     width: 90%;
 }
 
+.footer-section-link-tree-list {
+    display: none;
+}
+
+.legal-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+@media (max-width: 700px) {
+    .slogan {
+        font-size: 5rem;
+        line-height: 4.25rem;
+    }
+    
+    .left-side-details {
+        display: flex;
+        gap: 5rem;
+    }
+
+    .footer-section-contact-us {
+        display: none;
+    }
+
+    .footer-section-location {
+        display: none;
+    }
+
+    .footer-section-promotional {
+        display: none;
+    }
+
+    .footer-section-link-tree-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .footer-section-external-resources {
+        display: none;
+    }
+}
+
 /* Carrousel */
 
 .cr-carrousel {
@@ -396,6 +472,15 @@ a {
     font-weight: 600;
 }
 
+@media (max-width: 1150px) {
+    .cr-carrousel-big-text {
+        font-size: 7rem;
+    }
+    .cr-carrousel-text {
+        font-size: 3rem;
+    }
+}
+
 /* About FRC */
 
 .first-about-section {
@@ -412,6 +497,20 @@ a {
     font-size: 5rem;
     font-weight: 600;
     text-align: justify;
+    max-width: 105rem;
+    width: 85vw;
+}
+
+.first-about-section-logo {
+    width: 85vw;
+    max-width: 100rem;
+}
+
+@media (max-width: 1150px) {
+    .first-about-section {
+        flex-direction: column;
+        gap: 10rem;
+    }
 }
 
 /* About Crescendo */
@@ -471,6 +570,12 @@ a {
     color: var(--light-black-text);
 }
 
+@media (max-width: 1150px) {
+    .crescendo-about-texts-wrapper {
+        display: none;
+    }
+}
+
 /* About CyberRain */
 
 .cr-about-section {
@@ -489,10 +594,12 @@ a {
     flex-direction: column;
     gap: 4rem;
     margin: 0 0 0 140rem;
+    max-width: 140rem;
+    width: 85vw;
 }
 
 .cr-identity-wrapper {
-    width: 140rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -519,7 +626,7 @@ a {
 .cr-about-text {
     color: var(--soft-black-text);
     font-size: 5rem;
-    width: 140rem;
+    width: 100%;
     font-weight: 600;
     text-align: justify;
 }
@@ -533,6 +640,7 @@ a {
 
 .cr-about-buttons-wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 4.5rem;
 }
 
@@ -587,4 +695,24 @@ a {
     width: 20rem;
     height: 25rem;
     transform: rotate(-4deg);
+}
+
+@media (max-width: 1150px) {
+    .cr-about-decoration-blob {
+        display: none;
+    }
+
+    .cr-about-wrapper {
+        margin: 0;
+    }
+
+    .cr-about-section {
+        height: 115rem;
+    }
+
+    .cr-about-buttons-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
 }

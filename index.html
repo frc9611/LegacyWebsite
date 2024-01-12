@@ -9,8 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;600;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="./assets/transfonter.org-20240110-133223/Humaroid.woff" as="font" type="font/woff2"
-        crossorigin>
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
 </head>
 
@@ -105,66 +103,86 @@
     </section>
 
     <section class="first-about-section">
-        <img src="./assets/first-logo.png" alt="">
+        <img src="./assets/first-logo.png" alt="Logo da FIRST" class="first-about-section-logo">
         <p class="first-about-text">A FIRST® é uma ONG sem fins lucrativos que tem como objetivo criar e preparar a nova
             geração de líderes e profissionais capazes de criar soluções para os grandes problemas que assolam nossa
             sociedade nos dias atuais.</p>
     </section>
 
     <footer class="footer">
-        <section class="left-side-details">
-            <div class="slogan-wrapper">
-                <span class="slogan">
-                    Brainstorm, <br />
-                    Invent, <br />
-                    CyberRain!
+        <div class="footer-sections-grouper">
+            <section class="left-side-details">
+                <div class="slogan-wrapper">
+                    <span class="slogan">
+                        Brainstorm, <br />
+                        Invent, <br />
+                        CyberRain!
+                    </span>
+                </div>
+                <div class="legal-part">
+                    <span class="copyright">©2024 - CyberRain</span>
+                    <img src="./assets/sesi-senai-logo.png" alt="Logo do SESI e logo do SENAI">
+                </div>
+            </section>
+            <section class="footer-section-contact-us">
+                <span class="footer-section-title">Contate-nos</span>
+                <li class="footer-section-items-list">
+                    <ul><a href="mailto:marketing@9611.team" class="footer-section-item">marketing@9611.team</a></ul>
+                    <ul><a href="mailto:contact@9611.team" class="footer-section-item">contact@9611.team</a></ul>
+                    <ul><a href="mailto:mentorship@9611.team" class="footer-section-item">mentorship@9611.team</a></ul>
+                </li>
+            </section>
+        </div>
+        <div class="footer-sections-grouper footer-section-external-resources">
+            <section class="footer-section-location">
+                <span class="footer-section-title">Localização</span>
+                <li class="footer-section-items-list">
+                    <ul><a target="_blank"
+                            href="https://www.google.com.br/maps/place/Joinville+-+SC/@-26.2630126,-49.1276892,11z/data=!3m1!4b1!4m6!3m5!1s0x94dea3f39db1ab37:0xbc4b989df161e9fa!8m2!3d-26.3043758!4d-48.8463744!16zL20vMDgydGcw?hl=pt-BR&entry=ttu"
+                            class="footer-section-item">Brasil, SC, Joinville</a></ul>
+                    <ul>
+                        <a target="_blank"
+                            href="https://www.google.com.br/maps/place/Complexo+Educacional+Moinho+Joinville+-+FIESC%2FSESI%2FSENAI/@-26.3078768,-48.8399433,19.69z/data=!4m6!3m5!1s0x94deb187e1aad16f:0xef9a7e18b1d0e8e9!8m2!3d-26.3078125!4d-48.8394!16s%2Fg%2F11j8k4lqqb?hl=pt-BR&entry=ttu"
+                            class="footer-section-item">
+                            Escola de Referência SESI, <br />
+                            Unidade Moinho
+                        </a>
+                    </ul>
+                </li>
+            </section>
+            <section class="footer-section-promotional">
+                <span class="footer-section-title">
+                    Quer estar sempre ligado <br />
+                    no mundo da robótica?
                 </span>
-            </div>
-            <div class="legal-part">
-                <span class="copyright">©2024</span>
-            </div>
-        </section>
-        <section class="footer-section-contact-us">
-            <span class="footer-section-title">Contate-nos</span>
-            <li class="footer-section-items-list">
-                <ul><a href="mailto:cyberrain@gmail.com" class="footer-section-item">cyberrain@gmail.com</a></ul>
-                <ul><a href="mailto:jean.hoffmann@edu.sesisc.org.br"
-                        class="footer-section-item">jean.hoffmann@edu.sesisc.org.br</a></ul>
-            </li>
-        </section>
-        <section class="footer-section-location">
-            <span class="footer-section-title">Localização</span>
-            <li class="footer-section-items-list">
-                <ul><a target="_blank"
-                        href="https://www.google.com.br/maps/place/Joinville+-+SC/@-26.2630126,-49.1276892,11z/data=!3m1!4b1!4m6!3m5!1s0x94dea3f39db1ab37:0xbc4b989df161e9fa!8m2!3d-26.3043758!4d-48.8463744!16zL20vMDgydGcw?hl=pt-BR&entry=ttu"
-                        class="footer-section-item">Brasil, SC, Joinville</a></ul>
-                <ul>
-                    <a target="_blank"
-                        href="https://www.google.com.br/maps/place/Complexo+Educacional+Moinho+Joinville+-+FIESC%2FSESI%2FSENAI/@-26.3078768,-48.8399433,19.69z/data=!4m6!3m5!1s0x94deb187e1aad16f:0xef9a7e18b1d0e8e9!8m2!3d-26.3078125!4d-48.8394!16s%2Fg%2F11j8k4lqqb?hl=pt-BR&entry=ttu"
-                        class="footer-section-item">
-                        Escola de Referência SESI, <br />
-                        Unidade Moinho
-                    </a>
+                <span><a href="not-implemented.html" class="footer-section-newsletter-text">Assine a nossa
+                        Newsletter</a></span>
+                <span class="footer-section-title">Siga-nos nas redes sociais</span>
+                <ul class="footer-section-social-media-list">
+                    <li class="social-media"><a target="_blank" href="https://www.instagram.com/cyberainfrc/"><img
+                                class="small-icon" src="./assets/instagram-icon.png" alt="Ícone do Instagram"></a></li>
+                    <li class="social-media"><a target="_blank" href="https://github.com/frc9611"><img
+                                class="small-icon" src="./assets/github-icon.png" alt="Ícone do Github"></a></li>
+                    <li class="social-media"><a target="_blank" href="https://www.thebluealliance.com/team/9611"><img
+                                class="small-icon" src="./assets/tba-lamp.svg" alt="Ícone da The Blue Alliance"></a>
+                    </li>
                 </ul>
-            </li>
-        </section>
-        <section class="footer-section-promotional">
-            <span class="footer-section-title">
-                Quer estar sempre ligado <br />
-                no mundo da robótica?
-            </span>
-            <span><a href="not-implemented.html" class="footer-section-newsletter-text">Assine a nossa
-                    Newsletter</a></span>
-            <span class="footer-section-title">Siga-nos nas redes sociais</span>
-            <ul class="footer-section-social-media-list">
-                <li class="social-media"><a target="_blank" href="https://www.instagram.com/cyberainfrc/"><img
-                            class="small-icon" src="./assets/instagram-icon.png" alt="Ícone do Instagram"></a></li>
-                <li class="social-media"><a target="_blank" href="https://github.com/frc9611"><img class="small-icon"
-                            src="./assets/github-icon.png" alt="Ícone do Github"></a></li>
-                <li class="social-media"><a target="_blank" href="https://www.thebluealliance.com/team/9611"><img
-                            class="small-icon" src="./assets/tba-lamp.svg" alt="Ícone do Github"></a></li>
-            </ul>
-        </section>
+            </section>
+        </div>
+        <div>
+            <section class="footer-section-link-tree">
+                <ul class="footer-section-link-tree-list">
+                    <li class="social-media"><a target="_blank" href="https://www.instagram.com/cyberainfrc/"><img
+                                class="small-icon" src="./assets/instagram-icon.png" alt="Ícone do Instagram"></a></li>
+                    <li class="social-media"><a target="_blank" href="https://github.com/frc9611"><img class="small-icon"
+                                src="./assets/github-icon.png" alt="Ícone do Github"></a></li>
+                    <li class="social-media"><a target="_blank" href="https://www.thebluealliance.com/team/9611"><img
+                                class="small-icon" src="./assets/tba-lamp.svg" alt="Ícone da The Blue Alliance"></a></li>
+                    <li class="social-media"><a target="_blank" href="mailto:contact@9611.team"><img class="small-icon"
+                                src="./assets/email-icon.png" alt="Ícone de e-mail"></a></li>
+                </ul>
+            </section>
+        </div>
     </footer>
 </body>
 
