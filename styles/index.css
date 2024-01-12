@@ -63,14 +63,6 @@
     }
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
-    font-size: 4px;
-}
-
 :root {
     --white-text: #f5f5f5;
     --black-text: #202020;
@@ -84,16 +76,6 @@
     --transparent: #0000;
     --crescendo-theme: #01D485;
     --backdrop: #000000CC;
-}
-
-/* Calibrations */
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
 }
 
 /* Misc. */
