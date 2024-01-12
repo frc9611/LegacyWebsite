@@ -94,7 +94,7 @@ a {
     text-decoration: none;
 }
 
-/* Misc. */
+/* Components */
 
 .highlighted-text {
     color: var(--cr-yellow) !important;
@@ -115,8 +115,6 @@ a {
     width: 6rem;
     aspect-ratio: 1 / 1;
 }
-
-/* Components */
 
 .yellow-unfilled-button {
     transition: color 0.15s ease-in;
