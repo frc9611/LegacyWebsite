@@ -391,7 +391,6 @@
 .slogan-wrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 4rem;
     height: 100%;
 }
 
@@ -542,6 +541,10 @@
     .footer-section-external-resources {
         display: none;
     }
+
+    .mobile-link-tree {
+        display: grid;
+    }
 }
 
 /* Carrousel */
@@ -563,6 +566,7 @@
 }
 
 .cr-carrousel-big-text {
+    text-align: center;
     color: var(--white-text);
     font-size: 16rem;
     font-weight: 600;
