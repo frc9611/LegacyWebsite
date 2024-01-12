@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <!-- Components -->
+    <script src="./javascripts/components/mobile-dropdown-menu.js" defer></script>
 </head>
 
 <body>
@@ -30,6 +32,10 @@
             </ul>
             <a href="not-implemented.html" class="yellow-unfilled-button">Contato</a>
         </nav>
+        <button id="open-dropdown-button">
+            <span class="dropdown-text">Menu</span>
+            <img src="./assets/dropdown-icon.png" class="dropdown-icon" alt="Ícone para abrir o menu dropdown">
+        </button>
     </header>
 
     <section class="cr-carrousel">
@@ -184,6 +190,21 @@
             </section>
         </div>
     </footer>
+
+    <div id="backdrop">
+        <div id="dropdown-menu">
+            <span class="dropdown-menu-title">Menu</span>
+            <ul class="dropdown-menu-options">
+                <li><a class="dropdown-menu-option" href="./not-implemented.html">Home</a></li>
+                <li><a class="dropdown-menu-option" href="./not-implemented.html">Conheça-nos</a></li>
+                <li><a class="dropdown-menu-option" href="./not-implemented.html">Projetos</a></li>
+                <li><a class="dropdown-menu-option" href="./not-implemented.html">Newsletter</a></li>
+                <li><a class="dropdown-menu-option" href="./not-implemented.html">Patrocinadores</a></li>
+                <li><a class="dropdown-menu-option" href="./not-implemented.html">Contato</a></li>
+            </ul>
+            <button id="dropdown-menu-close-button">Fechar Menu</button>
+        </div>
+    </div>
 </body>
 
 </html>
