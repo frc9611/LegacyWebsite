@@ -262,12 +262,23 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     background-color: var(--cr-purple);
     width: 100%;
     height: fit-content;
     display: flex;
-    gap: 17.5rem;
-    padding: 12rem;
+    gap: 15rem;
+    padding: 12rem 5.5rem;
+}
+
+.footer-sections-grouper {
+    display: flex;
+    gap: 15rem;
+    flex-wrap: wrap;
+}
+
+.footer-sections-grouper > section {
+    width: 66rem;
 }
 
 .slogan {
@@ -280,7 +291,10 @@ a {
 }
 
 .slogan-wrapper {
+    display: flex;
+    align-items: center;
     margin-bottom: 4rem;
+    height: 100%;
 }
 
 .copyright {
@@ -310,6 +324,13 @@ a {
 .footer-section-social-media-list {
     display: flex;
     gap: 1.5rem;
+}
+
+.small-icon[src="./assets/tba-lamp.svg"],
+.small-icon[src="./assets/email-icon.png"] {
+    border: 3px solid var(--white-text);
+    border-radius: 1.5rem;
+    padding: .5rem;
 }
 
 .footer-section-title {
@@ -374,6 +395,51 @@ a {
 .footer-section-newsletter-text:hover::before {
     display: block;
     width: 90%;
+}
+
+.footer-section-link-tree-list {
+    display: none;
+}
+
+.legal-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+@media (max-width: 700px) {
+    .slogan {
+        font-size: 5rem;
+        line-height: 4.25rem;
+    }
+    
+    .left-side-details {
+        display: flex;
+        gap: 5rem;
+    }
+
+    .footer-section-contact-us {
+        display: none;
+    }
+
+    .footer-section-location {
+        display: none;
+    }
+
+    .footer-section-promotional {
+        display: none;
+    }
+
+    .footer-section-link-tree-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .footer-section-external-resources {
+        display: none;
+    }
 }
 
 /* Carrousel */
