@@ -1,21 +1,40 @@
+/* Animations */
+
 @keyframes loading-bar-effect {
     0% {
         opacity: 1;
         width: 0%;
     }
+
     60% {
         opacity: 1;
         width: 100%;
     }
+
     80% {
         opacity: 1;
         width: 100%;
     }
+
     100% {
         opacity: 0;
         width: 100%;
     }
 }
+
+@keyframes show-ignore-load-button {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Colors */
 
 :root {
     --white-text: #f5f5f5;
@@ -30,11 +49,14 @@
     --transparent: #0000;
     --crescendo-theme: #01D485;
     --backdrop: #000000CC;
+    --cr-transparent-purple: #34024BCC;
     --ui-strong-blue: #074388;
     --ui-blue: #258bff;
     --ui-light-blue: #86bfff;
     --ui-ultra-light-blue: #d3e8ff;
 }
+
+/* Loading Page */
 
 #page-loading {
     position: fixed;
@@ -60,4 +82,15 @@
     animation: 2s ease loading-bar-effect infinite;
     height: 100%;
     background-color: var(--ui-blue);
+}
+
+.loading-page-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+#ignore-load-button {
+    animation: 15s ease show-ignore-load-button;
 }
