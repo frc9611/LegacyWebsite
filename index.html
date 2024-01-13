@@ -11,8 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <!-- Globals -->
+    <script src="./javascripts/disable-scroll.js" defer></script>
+    <!-- Pre-loads -->
+    <script src="./javascripts/loading-state.js" defer></script>
     <!-- Components -->
     <script src="./javascripts/components/mobile-dropdown-menu.js" defer></script>
+    <link rel="stylesheet" href="./styles/components/loading.css">
 </head>
 
 <body>
@@ -230,6 +235,13 @@
             </ul>
             <button id="dropdown-menu-close-button">Fechar Menu</button>
         </div>
+    </div>
+
+    <div id="page-loading">
+        <div id="loading-bar">
+            <div id="loading-bar-effect"></div>
+        </div>
+        <img src="./assets/cr-header-logo.png" alt="Logo da CyberRain" class="logo">
     </div>
 </body>
 

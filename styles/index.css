@@ -76,6 +76,7 @@
     --transparent: #0000;
     --crescendo-theme: #01D485;
     --backdrop: #000000CC;
+    --cr-transparent-purple: #34024BCC;
 }
 
 /* Misc. */
@@ -152,6 +153,7 @@
     padding: 1rem 3rem;
     border-radius: 2rem;
     font-weight: 600;
+    min-width: 70%;
 }
 
 #open-dropdown-button {
@@ -190,11 +192,44 @@
     display: flex;
     justify-content: center;
     width: 42.5rem !important;
+    min-width: fit-content;
 }
 
 .small-icon {
     width: 6rem;
     aspect-ratio: 1 / 1;
+}
+
+@media (max-height: 500px) {
+    #dropdown-menu {
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        height: inherit;
+        background-color: var(--cr-transparent-purple);
+    }
+}
+
+@media (max-width: 450px) {
+    #dropdown-menu {
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        height: inherit;
+        background-color: var(--cr-transparent-purple);
+    }
+
+    .dropdown-menu-options {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Components */
@@ -350,6 +385,30 @@
 
     #open-dropdown-button {
         display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        width: 20rem;
+        aspect-ratio: 1 / 1;
+    }
+
+    .dropdown-icon {
+        margin: .5rem;
+    }
+
+    .dropdown-text {
+        display: none;
+    }
+
+    .cr-team-number {
+        font-size: 6rem;
+        margin: 0 0 -1rem 0;
+    }
+    
+    .cr-team-name {
+        font-size: 6rem;
     }
 }
 
@@ -579,6 +638,15 @@
 }
 
 @media (max-width: 1150px) {
+    .cr-carrousel-big-text {
+        font-size: 11rem;
+    }
+    .cr-carrousel-text {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 700px) {
     .cr-carrousel-big-text {
         font-size: 7rem;
     }

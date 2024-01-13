@@ -1,4 +1,4 @@
-const d = document;
+var d = document;
 
 /** @type {HTMLButtonElement} */
 const dropdownOpenButton = d.querySelector("#open-dropdown-button");
@@ -17,12 +17,14 @@ dropdownOpenButton.addEventListener("click", () => {
     backdrop.style.display = "flex";
     dropdownOpenButtonIcon.classList.add("dropdown-icon-open");
     dropdownMenu.classList.add("dropdown-menu-open");
+    disableScroll();
 });
 
 dropdownCloseButton.addEventListener("click", () => {
     backdrop.style.display = "none";
     dropdownOpenButtonIcon.classList.remove("dropdown-icon-open");
     dropdownMenu.classList.remove("dropdown-menu-open");
+    enableScroll();
 });
 
 dropdownMenuOptions.forEach((option) => {
@@ -30,5 +32,6 @@ dropdownMenuOptions.forEach((option) => {
         backdrop.style.display = "none";
         dropdownOpenButtonIcon.classList.remove("dropdown-icon-open");
         dropdownMenu.classList.remove("dropdown-menu-open");
+        enableScroll();
     })
 });
