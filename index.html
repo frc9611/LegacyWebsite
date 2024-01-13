@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberRain - Home</title>
+    <link rel="stylesheet" href="./styles/global.def.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <!-- Components -->
+    <script src="./javascripts/components/mobile-dropdown-menu.js" defer></script>
 </head>
 
 <body>
@@ -30,6 +33,10 @@
             </ul>
             <a href="not-implemented.html" class="yellow-unfilled-button">Contato</a>
         </nav>
+        <button id="open-dropdown-button">
+            <span class="dropdown-text">Menu</span>
+            <img src="./assets/dropdown-icon.png" class="dropdown-icon" alt="Ícone para abrir o menu dropdown">
+        </button>
     </header>
 
     <section class="cr-carrousel">
@@ -159,31 +166,71 @@
                         Newsletter</a></span>
                 <span class="footer-section-title">Siga-nos nas redes sociais</span>
                 <ul class="footer-section-social-media-list">
-                    <li class="social-media"><a target="_blank" href="https://www.instagram.com/cyberainfrc/"><img
-                                class="small-icon" src="./assets/instagram-icon.png" alt="Ícone do Instagram"></a></li>
-                    <li class="social-media"><a target="_blank" href="https://github.com/frc9611"><img
-                                class="small-icon" src="./assets/github-icon.png" alt="Ícone do Github"></a></li>
-                    <li class="social-media"><a target="_blank" href="https://www.thebluealliance.com/team/9611"><img
-                                class="small-icon" src="./assets/tba-lamp.svg" alt="Ícone da The Blue Alliance"></a>
+                    <li class="social-media">
+                        <a target="_blank" href="https://www.instagram.com/cyberainfrc/">
+                            <img class="small-icon" src="./assets/instagram-icon.png" alt="Ícone do Instagram">
+                        </a>
+                    </li>
+                    <li class="social-media">
+                        <a target="_blank" href="https://github.com/frc9611">
+                            <img class="small-icon" src="./assets/github-icon.png" alt="Ícone do Github">
+                        </a>
+                    </li>
+                    <li class="social-media">
+                        <a target="_blank" href="https://www.thebluealliance.com/team/9611">
+                            <img class="small-icon" src="./assets/tba-lamp.svg" alt="Ícone da The Blue Alliance">
+                        </a>
+                    </li>
+                    <li class="social-media">
+                        <a target="_blank" href="mailto:contact@9611.team">
+                            <img class="small-icon" src="./assets/email-icon.png" alt="Ícone de e-mail">
+                        </a>
                     </li>
                 </ul>
             </section>
         </div>
-        <div>
+        <div class="mobile-link-tree">
             <section class="footer-section-link-tree">
                 <ul class="footer-section-link-tree-list">
-                    <li class="social-media"><a target="_blank" href="https://www.instagram.com/cyberainfrc/"><img
-                                class="small-icon" src="./assets/instagram-icon.png" alt="Ícone do Instagram"></a></li>
-                    <li class="social-media"><a target="_blank" href="https://github.com/frc9611"><img class="small-icon"
-                                src="./assets/github-icon.png" alt="Ícone do Github"></a></li>
-                    <li class="social-media"><a target="_blank" href="https://www.thebluealliance.com/team/9611"><img
-                                class="small-icon" src="./assets/tba-lamp.svg" alt="Ícone da The Blue Alliance"></a></li>
-                    <li class="social-media"><a target="_blank" href="mailto:contact@9611.team"><img class="small-icon"
-                                src="./assets/email-icon.png" alt="Ícone de e-mail"></a></li>
+                    <li class="social-media">
+                        <a target="_blank" href="https://www.instagram.com/cyberainfrc/">
+                            <img class="small-icon" src="./assets/instagram-icon.png" alt="Ícone do Instagram">
+                        </a>
+                    </li>
+                    <li class="social-media">
+                        <a target="_blank" href="https://github.com/frc9611">
+                            <img class="small-icon" src="./assets/github-icon.png" alt="Ícone do Github">
+                        </a>
+                    </li>
+                    <li class="social-media">
+                        <a target="_blank" href="https://www.thebluealliance.com/team/9611">
+                            <img class="small-icon" src="./assets/tba-lamp.svg" alt="Ícone da The Blue Alliance">
+                        </a>
+                    </li>
+                    <li class="social-media">
+                        <a target="_blank" href="mailto:contact@9611.team">
+                            <img class="small-icon" src="./assets/email-icon.png" alt="Ícone de e-mail">
+                        </a>
+                    </li>
                 </ul>
             </section>
         </div>
     </footer>
+
+    <div id="backdrop">
+        <div id="dropdown-menu">
+            <span class="dropdown-menu-title">Menu</span>
+            <ul class="dropdown-menu-options">
+                <li><a class="dropdown-menu-option" href="./not-implemented.html">Home</a></li>
+                <li><a class="dropdown-menu-option" href="./not-implemented.html">Conheça-nos</a></li>
+                <li><a class="dropdown-menu-option" href="./not-implemented.html">Projetos</a></li>
+                <li><a class="dropdown-menu-option" href="./not-implemented.html">Newsletter</a></li>
+                <li><a class="dropdown-menu-option" href="./not-implemented.html">Patrocinadores</a></li>
+                <li><a class="dropdown-menu-option" href="./not-implemented.html">Contato</a></li>
+            </ul>
+            <button id="dropdown-menu-close-button">Fechar Menu</button>
+        </div>
+    </div>
 </body>
 
 </html>
