@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberRain - Home</title>
-    <link rel="stylesheet" href="./styles/global.def.css">
-    <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <!-- Globals -->
+    <link rel="stylesheet" href="./styles/global/normalize.css">
+    <script src="./javascripts/disable-scroll.js" defer></script>
+    <!-- Prio-loads -->
+    <script src="./javascripts/loading-state-manager.js" defer></script>
+    <!-- Page CSS file -->
+    <link rel="stylesheet" href="./styles/index.css">
     <!-- Components -->
     <script src="./javascripts/components/mobile-dropdown-menu.js" defer></script>
+    <link rel="stylesheet" href="./styles/components/layout.css">
+    <link rel="stylesheet" href="./styles/components/loading.css">
 </head>
 
 <body>
@@ -128,7 +135,7 @@
                 </div>
                 <div class="legal-part">
                     <span class="copyright">©2024 - CyberRain</span>
-                    <img src="./assets/sesi-senai-logo.png" alt="Logo do SESI e logo do SENAI">
+                    <img src="./assets/sesi-senai-logo.png" alt="Logo do SESI e logo do SENAI" class="sesi-senai-logo">
                 </div>
             </section>
             <section class="footer-section-contact-us">
@@ -228,6 +235,16 @@
                 <li><a class="dropdown-menu-option" href="./not-implemented.html">Contato</a></li>
             </ul>
             <button id="dropdown-menu-close-button">Fechar Menu</button>
+        </div>
+    </div>
+
+    <div id="page-loading">
+        <div id="loading-bar">
+            <div id="loading-bar-effect"></div>
+        </div>
+        <div class="loading-page-content-wrapper">
+            <img src="./assets/cr-header-logo.png" alt="Logo da CyberRain" class="logo">
+            <div id="ignore-load-button" class="yellow-unfilled-button">Pular</div>
         </div>
     </div>
 </body>
