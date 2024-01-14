@@ -1,0 +1,264 @@
+/* Colors */
+
+:root {
+    --white-text: #f5f5f5;
+    --black-text: #202020;
+    --soft-black-text: #3a3a3a;
+    --light-black-text: #858585;
+    --cr-yellow: #FFC450;
+    --soft-red: #ff6a6a;
+    --cr-purple: #34024B;
+    --cr-light-purple: #9f64bb;
+    --cr-ultra-light-purple: #d6ccdb;
+    --transparent: #0000;
+    --crescendo-theme: #01D485;
+    --backdrop: #000000CC;
+    --soft-backdrop: #00000077;
+    --cr-transparent-purple: #34024BCC;
+    --ui-strong-blue: #074388;
+    --ui-blue: #258bff;
+    --ui-light-blue: #86bfff;
+    --ui-ultra-light-blue: #d3e8ff;
+}
+
+/* CyberRain logo section */
+
+.cr-theme-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 10 / 3.33;
+    background: url("./../assets/cool-cyberrain-bg.png");
+    background-size: cover;
+}
+
+/* CyberRain values */
+
+.cr-our-values {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    background-color: var(--cr-purple);
+}
+
+.cr-values-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.cr-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+    background-color: var(--soft-backdrop);
+    width: 100rem;
+    aspect-ratio: 3 / 4;
+    border-radius: 2rem;
+}
+
+.cr-value-name {
+    display: block;
+    font-size: 13rem;
+    color: var(--cr-yellow);
+    font-weight: 600;
+}
+
+.cr-value-description {
+    font-size: 5rem;
+    color: var(--white-text);
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Why CyberRain is special */
+
+.cr-why-we-are-special {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding: 25rem 0;
+}
+
+.logo-wrapper {
+    background-color: var(--cr-purple);
+    border-radius: 50%;
+    margin: 0 3rem 0 0;
+}
+
+.cr-strong-team-number {
+    font-family: "Humaroid";
+    font-size: 13rem;
+    line-height: 10rem;
+    color: var(--cr-purple);
+}
+
+.cr-strong-team-name {
+    font-family: "Humaroid";
+    font-size: 13rem;
+    line-height: 10rem;
+    color: var(--cr-purple);
+}
+
+.cr-explanations-wrapper {
+    width: 150rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    max-width: 85vw;
+}
+
+.cr-explanation-top-text {
+    font-size: 6rem;
+    color: var(--black-text);
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 15rem;
+}
+
+.cr-explanation-bottom-text {
+    font-size: 6rem;
+    color: var(--black-text);
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 15rem;
+}
+
+@media (max-width: 500px) {
+    .cr-explanation-top-text {
+        font-size: 4rem;
+    }
+
+    .cr-explanation-bottom-text {
+        font-size: 4rem;
+    }
+}
+
+/* CyberRain Team Photo */
+
+.cr-team-photo {
+    width: 100%;
+    aspect-ratio: 10 / 3;
+    background: url("./../assets/cr-team.png");
+    background-size: cover;
+}
+
+/* CyberRain Moments */
+
+.cr-moments-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25rem;
+}
+
+.cr-moments {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10rem;
+}
+
+.cr-moment {
+    width: 100rem;
+    aspect-ratio: 3 / 4;
+}
+
+@media (max-width: 1300px) {
+    .cr-moments {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .cr-moments {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CyberRain Members Showcase */
+
+.cr-member-list-section {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    width: 100%;
+    overflow: scroll;
+    padding: 25rem 15rem;
+}
+
+.cr-members-section-title {
+    position: sticky;
+    top: 0;
+    font-size: 15rem;
+    color: var(--cr-purple);
+    font-weight: 600;
+    text-indent: 10rem;
+}
+
+.cr-member-list {
+    display: flex;
+    gap: 5rem;
+}
+
+.cr-member-card {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100rem;
+    aspect-ratio: 3 / 4;
+    background-color: var(--cr-light-purple);
+    padding: 5rem;
+    border-radius: 2rem;
+    max-width: 85vw;
+}
+
+.cr-member-photo {
+    border-radius: 2rem;
+}
+
+.cr-member-name {
+    font-size: 7rem;
+    color: var(--black-text);
+    font-weight: 600;
+}
+
+.cr-member-tag {
+    color: var(--black-text);
+    font-size: 5rem;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-weight: 600;
+    width: fit-content;
+    background-color: var(--cr-yellow);
+}
+
+.cr-member-tag::after {
+    content: "🧠";
+    margin: 0 0 0 1rem;
+}
+
+/* Return to top button */
+
+.return-to-top-button-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15rem;
+}
+
+.return-to-top-button::after {
+    content: "⬆";
+    margin: 0 0 0 2rem;
+}
+
+@media (max-width: 650px) {
+    .cr-members-section-title {
+        font-size: 10rem;
+    }
+}
