@@ -21,6 +21,10 @@
 
 /* Calibrations of default styles */
 
+hr {
+    border: none;
+}
+
 li {
     list-style: none;
 }
