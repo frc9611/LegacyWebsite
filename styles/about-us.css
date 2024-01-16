@@ -316,8 +316,11 @@
     overflow-x: scroll;
     padding: 10rem 0 10rem 10rem;
     border-radius: 2rem;
-    background-color: var(--cr-ultra-light-purple);
-    border: .75rem solid var(--cr-purple);
+    /* background-color: var(--cr-ultra-light-purple); */
+    background-color: var(--soft-backdrop);
+    /* border: .75rem solid var(--cr-purple); */
+    
+    box-shadow: var(--black-text) 0 0 3rem;
 }
 
 .cr-member-list-title {
@@ -329,7 +332,7 @@
     font-size: 7rem;
     color: var(--cr-purple);
     font-weight: 600;
-    border: .75rem solid var(--cr-purple);
+    /* border: .75rem solid var(--cr-purple); */
     padding: 2rem 4rem;
     border-radius: 2rem;
     height: fit-content;
@@ -349,7 +352,9 @@
     gap: 3rem;
     width: 60rem;
     aspect-ratio: 3 / 4;
-    background-color: rgb(34, 1, 48);
+    /* background-color: rgb(34, 1, 48); */
+    background-color: var(--white-text);
+    /* border: 1rem solid var(--cr-purple); */
     padding: 5rem;
     border-radius: 2rem;
     box-shadow: var(--black-text) 0 0 3rem;
@@ -357,7 +362,7 @@
 
 .cr-member-photo {
     border-radius: 2rem;
-    border: .75rem solid var(--white-text);
+    /* border: .75rem solid var(--white-text); */
     width: 50rem;
     aspect-ratio: 2 / 3;
 }
@@ -380,7 +385,8 @@
 
 .cr-member-name {
     font-size: 5rem;
-    color: var(--white-text);
+    /* color: var(--white-text); */
+    color: var(--black-text);
     font-weight: 600;
 }
 
