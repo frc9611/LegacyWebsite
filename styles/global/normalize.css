@@ -1,3 +1,14 @@
+/* Imports */
+
+@font-face {
+    font-family: 'Humaroid';
+    src: url('./../../../assets/fonts/Humaroid.woff2') format('woff2'),
+        url('./../../../assets/fonts/Humaroid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Default CSS for the entire application */
 
 * {
@@ -9,6 +20,10 @@
 }
 
 /* Calibrations of default styles */
+
+hr {
+    border: none;
+}
 
 li {
     list-style: none;

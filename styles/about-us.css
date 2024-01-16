@@ -1,0 +1,467 @@
+/* Colors */
+
+:root {
+    --white-text: #f5f5f5;
+    --black-text: #202020;
+    --soft-black-text: #3a3a3a;
+    --light-black-text: #858585;
+    --cr-yellow: #FFC450;
+    --soft-red: #ff6a6a;
+    --cr-purple: #34024B;
+    --cr-strong-purple: #220130;
+    --cr-light-purple: #9f64bb;
+    --cr-ultra-light-purple: #d6ccdb;
+    --transparent: #0000;
+    --crescendo-theme: #01D485;
+    --backdrop: #000000CC;
+    --soft-backdrop: #00000077;
+    --cr-transparent-purple: #34024BCC;
+    --ui-strong-blue: #074388;
+    --ui-blue: #258bff;
+    --ui-light-blue: #86bfff;
+    --ui-ultra-light-blue: #d3e8ff;
+}
+
+/* Modded Header */
+
+.modded-header {
+    background-color: #271129;
+}
+
+/* CyberRain logo section */
+
+.cr-theme-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 10 / 3.33;
+    background: url("./../assets/cool-cyberrain-bg.png");
+    background-size: cover;
+}
+
+/* CyberRain values */
+
+.cr-our-values {
+    display: flex;
+    justify-content: center;
+    background-image: url("./../assets/cr-team.png");
+    background-size: cover;
+}
+
+.cr-our-values-backdrop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15rem;
+    background-color: var(--cr-transparent-purple);
+    padding: 25rem 0;
+    width: 100%;
+    height: fit-content;
+}
+
+.cr-values-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.cr-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+    width: 100rem;
+    max-width: 85vw;
+    background-color: var(--soft-backdrop);
+    aspect-ratio: 3 / 4;
+    border-radius: 2rem;
+    box-shadow: var(--black-text) 0 0 4rem;
+}
+
+.cr-value-decoration-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+    justify-content: flex-end;
+}
+
+.cr-value-name {
+    display: block;
+    font-size: 13rem;
+    color: var(--cr-yellow);
+    font-weight: 600;
+}
+
+.cr-value-description {
+    font-size: 5rem;
+    color: var(--white-text);
+    font-weight: 600;
+    text-align: center;
+    height: 50%;
+}
+
+@media (max-width: 450px) {
+    .cr-value {
+        width: 80rem;
+    }
+
+    .cr-value-name {
+        font-size: 8rem;
+    }
+
+    .cr-value-description {
+        font-size: 4rem;
+    }
+}
+
+/* Why CyberRain is special */
+
+.cr-why-we-are-special {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding: 25rem 0;
+}
+
+.cr-info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4rem;
+}
+
+.logo-wrapper {
+    background-color: var(--cr-purple);
+    border-radius: 50%;
+    margin: 0 3rem 0 0;
+}
+
+.cr-strong-team-number {
+    font-family: "Humaroid";
+    font-size: 13rem;
+    line-height: 10rem;
+    color: var(--cr-purple);
+}
+
+.cr-strong-team-name {
+    font-family: "Humaroid";
+    font-size: 13rem;
+    line-height: 10rem;
+    color: var(--cr-purple);
+}
+
+.cr-explanations-wrapper {
+    width: 150rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    max-width: 85vw;
+}
+
+.cr-explanation-top-text {
+    font-size: 6rem;
+    color: var(--black-text);
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 15rem;
+}
+
+.cr-explanation-bottom-text {
+    font-size: 6rem;
+    color: var(--black-text);
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 15rem;
+}
+
+@media (max-width: 900px) {
+    .cr-why-we-are-special {
+        padding: 25rem 0 0 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .cr-explanation-top-text {
+        font-size: 4rem;
+    }
+
+    .cr-explanation-bottom-text {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .cr-info-wrapper {
+        justify-content: center;
+        margin: 0 4rem;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+/* CyberRain Team Photo */
+
+.cr-team-photo {
+    width: 100%;
+    aspect-ratio: 10 / 3;
+    background: url("./../assets/cr-team.png");
+    background-size: cover;
+}
+
+/* CyberRain Moments */
+
+.cr-moments-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25rem;
+}
+
+.cr-moments {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10rem;
+}
+
+.cr-moment {
+    width: 100rem;
+    aspect-ratio: 3 / 4;
+}
+
+@media (max-width: 1300px) {
+    .cr-moment {
+        width: 60rem;
+        aspect-ratio: 3 / 4;
+    }
+}
+
+@media (max-width: 900px) {
+    .cr-moments {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cr-team-photo {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .cr-moments {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .cr-moment {
+        width: 30rem;
+        aspect-ratio: 3 / 4;
+    }
+}
+
+@media (max-width: 400px) {
+    .cr-moments {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .cr-moment {
+        width: 30rem;
+        aspect-ratio: 3 / 4;
+    }
+}
+
+/* CyberRain Members Showcase */
+
+.cr-member-list-section {
+    width: 100%;
+    background-image: url("./../assets/frc-filtered-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cr-member-list-section-backdrop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15rem;
+    background-color: var(--cr-transparent-purple);
+    padding: 25rem 0;
+    width: 100%;
+    height: fit-content;
+}
+
+.cr-members-section-title {
+    font-size: 15rem;
+    color: var(--cr-yellow);
+    font-weight: 600;
+}
+
+.cr-members-list-wrapper {
+    position: relative;
+    width: 85%;
+    max-width: 320rem;
+}
+
+.cr-member-list {
+    position: relative;
+    display: flex;
+    gap: 5rem;
+    overflow-x: scroll;
+    padding: 10rem 0 10rem 10rem;
+    border-radius: 2rem;
+    /* background-color: var(--cr-ultra-light-purple); */
+    background-color: var(--soft-backdrop);
+    /* border: .75rem solid var(--cr-purple); */
+    
+    box-shadow: var(--black-text) 0 0 3rem;
+}
+
+.cr-member-list-title {
+    position: absolute;
+    left: 17.5rem;
+    top: -7rem;
+    z-index: 10;
+    background-color: var(--white-text);
+    font-size: 7rem;
+    color: var(--cr-purple);
+    font-weight: 600;
+    /* border: .75rem solid var(--cr-purple); */
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    height: fit-content;
+}
+
+.cr-member-card:last-child {
+    margin: 0 10rem 0 0;
+}
+
+.cr-member-list::-webkit-scrollbar {
+    display: none;
+}
+
+.cr-member-card {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 60rem;
+    aspect-ratio: 3 / 4;
+    /* background-color: rgb(34, 1, 48); */
+    background-color: var(--white-text);
+    /* border: 1rem solid var(--cr-purple); */
+    padding: 5rem;
+    border-radius: 2rem;
+    box-shadow: var(--black-text) 0 0 3rem;
+}
+
+.cr-member-photo {
+    border-radius: 2rem;
+    /* border: .75rem solid var(--white-text); */
+    width: 50rem;
+    aspect-ratio: 2 / 3;
+}
+
+.cr-member-without-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 6rem;
+    border-radius: 2rem;
+    border: .75rem solid var(--white-text);
+    width: 50rem;
+    height: 75rem;
+    background-color: #605b69;
+    color: var(--black-text);
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cr-member-name {
+    font-size: 5rem;
+    /* color: var(--white-text); */
+    color: var(--black-text);
+    font-weight: 600;
+}
+
+.cr-member-tag {
+    color: var(--black-text);
+    font-size: 5rem;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.cr-member-tag[data-func="mentorship"] {
+    background-color: var(--soft-red);
+}
+
+.cr-member-tag[data-func="marketing"] {
+    background-color: var(--crescendo-theme);
+}
+
+.cr-member-tag[data-func="eletrics"] {
+    background-color: var(--cr-yellow);
+}
+
+.cr-member-tag[data-func="building"] {
+    background-color: var(--cr-yellow);
+}
+
+.cr-member-tag[data-func="proggraming"] {
+    background-color: var(--ui-blue);
+}
+
+.cr-member-tag[data-func="design"] {
+    background-color: var(--cr-light-purple);
+}
+
+@media (max-width: 800px) {
+    .cr-members-list-wrapper {
+        width: 100%;
+    }
+
+    .cr-member-list {
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+
+    .cr-member-list-title {
+        left: 10rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .cr-members-section-title {
+        font-size: 10rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .cr-members-section-title {
+        font-size: 8rem;
+    }
+}
+
+/* Return to top button */
+
+.return-to-top-button-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15rem;
+    background-color: var(--cr-ultra-light-purple);
+}
+
+.return-to-top-button::after {
+    content: "⬆";
+    margin: 0 0 0 2rem;
+}
