@@ -295,6 +295,7 @@
     padding: 25rem 0;
     width: 100%;
     height: fit-content;
+    backdrop-filter: blur(.5rem);
 }
 
 .cr-members-section-title {
