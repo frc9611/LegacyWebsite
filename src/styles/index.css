@@ -1,0 +1,376 @@
+/* Animations */
+
+@keyframes cr-transparent-logo-80rem-floating {
+    0% {
+        transform: rotate(4deg);
+    }
+
+    50% {
+        transform: rotate(-4deg);
+    }
+
+    100% {
+        transform: rotate(4deg);
+    }
+}
+
+@keyframes cr-transparent-logo-60rem-floating {
+    0% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+        transform: rotate(-4deg);
+    }
+}
+
+@keyframes cr-transparent-logo-40rem-floating {
+    0% {
+        transform: rotate(4deg);
+    }
+
+    50% {
+        transform: rotate(-4deg);
+    }
+
+    100% {
+        transform: rotate(4deg);
+    }
+}
+
+@keyframes cr-transparent-logo-20rem-floating {
+    0% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+        transform: rotate(-4deg);
+    }
+}
+
+/* Colors */
+
+:root {
+    --white-text: #f5f5f5;
+    --black-text: #202020;
+    --soft-black-text: #3a3a3a;
+    --light-black-text: #858585;
+    --cr-yellow: #FFC450;
+    --soft-red: #ff6a6a;
+    --cr-purple: #34024B;
+    --cr-light-purple: #9f64bb;
+    --cr-ultra-light-purple: #d6ccdb;
+    --transparent: #0000;
+    --crescendo-theme: #01D485;
+    --backdrop: #000000CC;
+    --cr-transparent-purple: #34024BCC;
+    --ui-strong-blue: #074388;
+    --ui-blue: #258bff;
+    --ui-light-blue: #86bfff;
+    --ui-ultra-light-blue: #d3e8ff;
+}
+
+/* Carrousel */
+
+.cr-carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 10 / 3;
+    background: url("./../assets/cr-team.png");
+    background-size: cover;
+}
+
+.cr-carrousel-texts-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cr-carrousel-big-text {
+    text-align: center;
+    color: var(--white-text);
+    font-size: 16rem;
+    font-weight: 600;
+}
+
+.cr-carrousel-text {
+    color: var(--white-text);
+    font-size: 8rem;
+    font-weight: 600;
+}
+
+@media (max-width: 1150px) {
+    .cr-carrousel-big-text {
+        font-size: 11rem;
+    }
+    .cr-carrousel-text {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .cr-carrousel-big-text {
+        font-size: 7rem;
+    }
+    .cr-carrousel-text {
+        font-size: 3rem;
+    }
+}
+
+/* About FRC */
+
+.first-about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50rem;
+    padding: 20rem 0;
+}
+
+.first-about-text {
+    width: 105rem;
+    color: var(--black-text);
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: justify;
+    max-width: 105rem;
+    width: 85vw;
+}
+
+.first-about-section-logo {
+    width: 85vw;
+    max-width: 100rem;
+}
+
+@media (max-width: 1150px) {
+    .first-about-section {
+        flex-direction: column;
+        gap: 10rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .first-about-text {
+        font-size: 4rem;
+    }
+}
+
+/* About Crescendo */
+
+.crescendo-about-section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url("./../assets/crescendo-wp.jpg");
+    background-size: contain;
+    width: 100%;
+    aspect-ratio: 8/4.5;
+    padding: 0 0 15rem;
+}
+
+.crescendo-about-text {
+    margin-top: 4rem;
+    width: 110rem;
+    color: var(--white-text);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.crescendo-about-texts-wrapper {
+    display: flex;
+    gap: 25rem;
+}
+
+.creascendo-meaning-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 150rem;
+}
+
+.crescendo-meaning {
+    color: var(--crescendo-theme);
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 9rem;
+}
+
+.creascendo-meaning-context {
+    color: var(--white-text);
+    font-size: 7rem;
+    font-weight: bolder;
+}
+
+.crescendo-meaning-source-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 0;
+}
+
+.crescendo-meaning-source {
+    color: var(--white-text);
+    font-size: 3.5rem;
+    color: var(--light-black-text);
+}
+
+@media (max-width: 1150px) {
+    .crescendo-about-texts-wrapper {
+        display: none;
+    }
+}
+
+/* About CyberRain */
+
+.cr-about-section {
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 175rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cr-about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 0 0 0 140rem;
+    max-width: 140rem;
+    width: 85vw;
+}
+
+.cr-identity-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cr-identity-name {
+    font-size: 8rem;
+    color: var(--cr-purple);
+    font-weight: bold;
+}
+
+.cr-identity-number {
+    font-size: 8rem;
+    color: var(--cr-purple);
+    font-weight: bold;
+}
+
+.cr-identity-number::before {
+    font-size: 6rem;
+    color: var(--light-black-text);
+    font-weight: 600;
+    content: "#";
+}
+
+.cr-about-text {
+    color: var(--soft-black-text);
+    font-size: 5rem;
+    width: 100%;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.cr-about-wrapper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cr-about-buttons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4.5rem;
+}
+
+.cr-about-decoration-blob {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 140rem;
+}
+
+.cr-about-blob {
+    width: 100rem;
+}
+
+.cr-about-blob-complement {
+    display: block;
+    height: 175rem;
+    width: 100%;
+    background-color: var(--cr-ultra-light-purple);
+}
+
+.cr-black-transparent-logo {
+    position: absolute;
+    right: 18rem;
+    display: block;
+}
+
+.cr-black-transparent-logo-80rem {
+    animation: 7s none 0s infinite cr-transparent-logo-80rem-floating;
+    width: 80rem;
+    height: 85rem;
+    transform: rotate(4deg);
+}
+
+.cr-black-transparent-logo-60rem {
+    animation: 10s none 0s infinite cr-transparent-logo-60rem-floating;
+    width: 60rem;
+    height: 65rem;
+    transform: rotate(-4deg);
+}
+
+.cr-black-transparent-logo-40rem {
+    animation: 10s none 0s infinite cr-transparent-logo-40rem-floating;
+    width: 40rem;
+    height: 45rem;
+    transform: rotate(4deg);
+}
+
+.cr-black-transparent-logo-20rem {
+    animation: 10s none 0s infinite cr-transparent-logo-20rem-floating;
+    width: 20rem;
+    height: 25rem;
+    transform: rotate(-4deg);
+}
+
+@media (max-width: 1150px) {
+    .cr-about-decoration-blob {
+        display: none;
+    }
+
+    .cr-about-wrapper {
+        margin: 0;
+    }
+
+    .cr-about-section {
+        height: 115rem;
+    }
+
+    .cr-about-buttons-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .cr-about-text {
+        font-size: 4rem;
+    }
+}

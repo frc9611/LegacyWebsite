@@ -1,0 +1,34 @@
+/* Imports */
+
+@font-face {
+    font-family: 'Humaroid';
+    src: url('./../../../assets/fonts/Humaroid.woff2') format('woff2'),
+        url('./../../../assets/fonts/Humaroid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Default CSS for the entire application */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-size: 4px;
+}
+
+/* Calibrations of default styles */
+
+hr {
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
