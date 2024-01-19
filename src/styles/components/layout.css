@@ -62,6 +62,16 @@
     font-style: normal;
 }
 
+@-moz-document url-prefix() {
+    .cr-team-name {
+        font-family: "Ubuntu";
+    }
+
+    .cr-team-number {
+        font-family: "Ubuntu";
+    }
+}
+
 .nav-wrapper {
     display: flex;
     align-items: center;
@@ -311,6 +321,12 @@
     font-style: normal;
     color: var(--white-text);
     line-height: 7rem;
+}
+
+@-moz-document url-prefix() {
+    .slogan {
+        font-family: "Ubuntu";
+    }
 }
 
 .slogan-wrapper {
