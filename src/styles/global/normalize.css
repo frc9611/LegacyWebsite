@@ -21,6 +21,11 @@
 
 /* Calibrations of default styles */
 
+main {
+    height: fit-content;
+    min-height: 100vh;
+}
+
 hr {
     border: none;
 }
