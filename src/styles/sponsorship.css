@@ -1,0 +1,102 @@
+/* Colors */
+
+:root {
+    --white-text: #f5f5f5;
+    --black-text: #202020;
+    --soft-black-text: #3a3a3a;
+    --light-black-text: #858585;
+    --cr-yellow: #FFC450;
+    --soft-red: #ff6a6a;
+    --cr-purple: #34024B;
+    --cr-light-purple: #9f64bb;
+    --cr-ultra-light-purple: #d6ccdb;
+    --transparent: #0000;
+    --crescendo-theme: #01D485;
+    --backdrop: #000000CC;
+    --cr-transparent-purple: #34024BCC;
+    --ui-strong-blue: #074388;
+    --ui-blue: #258bff;
+    --ui-light-blue: #86bfff;
+    --ui-ultra-light-blue: #d3e8ff;
+}
+
+/* Calibrations */
+
+body {
+    height: 100vh;
+}
+
+/* Sponsorship */
+
+.sponsorship-motivation-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sponsorship-motivation-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    width: 225rem;
+    padding: 15rem;
+}
+
+.sponsorship-motivation-title {
+    color: var(--cr-purple);
+    font-size: 12rem;
+    font-weight: 600;
+}
+
+.sponsorship-motivations-wrapper {
+    display: flex;
+    gap: 10rem;
+}
+
+.sponsorship-motivation {
+    display: flex;
+    flex-grow: 1;
+    color: var(--black-text);
+    font-size: 5rem;
+    font-weight: 600;
+    text-indent: 10rem;
+    text-align: justify;
+}
+
+@media (max-width: 750px) {
+    .sponsorship-motivation-section {
+        align-items: flex-start;
+    }
+
+    .sponsorship-motivations-wrapper {
+        flex-direction: column;
+        gap: 4rem;
+        padding: 0 7rem;
+    }
+
+    .sponsorship-motivation-section-wrapper {
+        padding: 7rem;
+        gap: 4rem;
+        padding: 0;
+    }
+
+    .sponsorship-motivation-title {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 8rem;
+        background-color: var(--cr-ultra-light-purple);
+        height: 50rem;
+        padding: 5rem 10rem;
+    }
+
+    .sponsorship-motivation {
+        font-size: 4rem;
+    }
+
+    .thick-line {
+        display: none;
+    }
+}

@@ -1,0 +1,211 @@
+/* Colors */
+
+:root {
+    --white-text: #f5f5f5;
+    --black-text: #202020;
+    --soft-black-text: #3a3a3a;
+    --light-black-text: #858585;
+    --cr-yellow: #FFC450;
+    --soft-red: #ff6a6a;
+    --cr-purple: #34024B;
+    --cr-light-purple: #9f64bb;
+    --cr-ultra-light-purple: #d6ccdb;
+    --transparent: #0000;
+    --crescendo-theme: #01D485;
+    --backdrop: #000000CC;
+    --cr-transparent-purple: #34024BCC;
+    --ui-strong-blue: #074388;
+    --ui-blue: #258bff;
+    --ui-light-blue: #86bfff;
+    --ui-ultra-light-blue: #d3e8ff;
+}
+
+/* About Projects */
+
+.about-projects-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25rem;
+    background-color: var(--cr-ultra-light-purple);
+}
+
+.about-projects-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 200rem;
+    max-width: 85vw;
+}
+
+.about-projects-title {
+    color: var(--cr-purple);
+    font-size: 10rem;
+    font-weight: 600;
+}
+
+.about-projects-text {
+    color: var(--black-text);
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 10rem;
+}
+
+.about-projects-options-wrapper {
+    display: flex;
+    gap: 7rem;
+    width: 100%;
+    justify-content: center;
+    margin: 3rem 0 0 0;
+}
+
+.about-projects-option {
+    display: flex;
+    gap: 7rem;
+    border: none;
+    border-radius: 2rem;
+    justify-content: space-between;
+    background-color: var(--white-text);
+    overflow: hidden;
+    align-items: center;
+    box-shadow: var(--light-black-text) 0 0 2rem;
+    cursor: pointer;
+    height: 20rem;
+}
+
+.about-projects-option-side-line {
+    height: 100%;
+    width: 1rem;
+    background-color: var(--cr-purple);
+    color: var(--transparent);
+}
+
+.about-projects-option-name-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-projects-option-name-prefix {
+    font-size: 3.5rem;
+    color: var(--cr-light-purple);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 0 -1rem 0;
+}
+
+.about-projects-option-name-class {
+    font-size: 5.5rem;
+    color: var(--cr-purple);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.about-projects-option-image {
+    width: 20rem;
+}
+
+@media (max-width: 600px) {
+    .about-projects-section {
+        padding: 25rem 0;
+    }
+
+    .about-projects-options-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-projects-option {
+        flex-direction: row-reverse;
+        width: fit-content;
+        margin-top: 5rem;
+        margin-bottom: -5rem;
+        max-width: 85vw;
+    }
+
+    .about-projects-option-image {
+        width: 30rem;
+    }
+}
+
+/* Projects List */
+
+.projects-list-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    padding: 25rem;
+}
+
+.projects-list-social {
+    max-width: 200rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.social-projects-title {
+    font-size: 10rem;
+    font-weight: 600;
+    color: var(--cr-purple);
+}
+
+.projects-title {
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--soft-black-text);
+}
+
+.projects-list-technical {
+    max-width: 200rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.technical-projects-title {
+    font-size: 10rem;
+    font-weight: 600;
+    color: var(--cr-purple);
+}
+
+.projects-repositories {
+    display: flex;
+    gap: 2rem;
+}
+
+.project-repository {
+    display: inline-block;
+    background-color: var(--cr-ultra-light-purple);
+    color: var(--cr-purple);
+    font-weight: 600;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 5rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+@media (max-width: 600px) {
+    .projects-list-section {
+        padding: 25rem 0;
+    }
+
+    .projects-list-technical,
+    .projects-list-social {
+        
+        max-width: 85vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .projects-repositories {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}

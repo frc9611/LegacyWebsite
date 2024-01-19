@@ -12,11 +12,8 @@
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <!-- Globals -->
     <link rel="stylesheet" href="./styles/global/normalize.css">
-    <script src="./javascripts/disable-scroll.js" defer></script>
-    <!-- Prio-loads -->
-    <script src="./javascripts/loading-state-manager.js" defer></script>
-    <!-- Page CSS file -->
-    <link rel="stylesheet" href="./styles/index.css">
+    <!--css-->
+    <link rel="stylesheet" href="./styles/contact.css">
     <!-- Components -->
     <script src="./javascripts/components/mobile-dropdown-menu.js" defer></script>
     <link rel="stylesheet" href="./styles/components/layout.css">
@@ -48,84 +45,70 @@
         </button>
     </header>
 
-    <main>
-        <section class="cr-carrousel">
-            <div class="cr-carrousel-texts-wrapper-backdrop">
-                <div class="cr-carrousel-texts-wrapper">
-                    <span class="cr-carrousel-big-text">FRC #9611 - <span
-                            class="cr-carrousel-big-text highlighted-text">CyberRain</span></span>
-                    <span class="cr-carrousel-text">A Equipe <span
-                            class="cr-carrousel-text highlighted-text">Pioneira</span> de
-                        FRC de
-                        Joinville</span>
-                </div>
+    <section class="title-subtitle">
+        <div class="title">
+            <span>Get in</span> <span class="yellow">Touch</span>
+        </div>
+        <div class="subtitle">
+            <span>Quer mandar uma mensagem, conhecer-nos ou nos patrocinar?</span>
+        </div>
+    </section>
+
+    <section class="flex-container">
+        <section class="contact-elements">
+            <div class="contact-type">
+                <span>Redes Sociais</span>
+            </div>
+            <hr />
+            <div class="contact">
+                <img src="/src/assets/ri_instagram-line.svg" alt="instagram-icon">
+                <a href="https://www.instagram.com/cyberainfrc/" target="_blank">@cyberain</a>
+            </div>
+
+            <div class="contact">
+                <img src="/src/assets/ri_tiktok-line.svg" alt="tiktok-icon">
+                <a href="https://www.tiktok.com/@cyberrainfrc?" target="_blank">@cyberrainfrc</a>
             </div>
         </section>
-        <section class="cr-about-section">
-            <div class="cr-about-decoration-blob">
-                <span class="cr-about-blob-complement"></span>
-                <img src="./assets/cr-about-blob-bg.svg" alt="Blob de decoração da seção de descrição da CyberRain"
-                    class="cr-about-blob">
-                <img src="./assets/cr-black-transparent-logo.png" alt="Logo da CyberRain da seção sobre a CyberRain"
-                    class="cr-black-transparent-logo cr-black-transparent-logo-80rem" style="margin: 0 0 0 0;">
-                <img src="./assets/cr-black-transparent-logo.png" alt="Logo da CyberRain da seção sobre a CyberRain"
-                    class="cr-black-transparent-logo cr-black-transparent-logo-60rem" style="margin: 155rem 70rem 80rem 0;">
-                <img src="./assets/cr-black-transparent-logo.png" alt="Logo da CyberRain da seção sobre a CyberRain"
-                    class="cr-black-transparent-logo cr-black-transparent-logo-60rem"
-                    style="margin: 5rem 45rem 120rem 80rem;">
-                <img src="./assets/cr-black-transparent-logo.png" alt="Logo da CyberRain da seção sobre a CyberRain"
-                    class="cr-black-transparent-logo cr-black-transparent-logo-40rem" style="margin: 120rem 10rem 0 0;">
-                <img src="./assets/cr-black-transparent-logo.png" alt="Logo da CyberRain da seção sobre a CyberRain"
-                    class="cr-black-transparent-logo cr-black-transparent-logo-40rem"
-                    style="margin: 80rem 80rem 110rem 80rem;">
-                <img src="./assets/cr-black-transparent-logo.png" alt="Logo da CyberRain da seção sobre a CyberRain"
-                    class="cr-black-transparent-logo cr-black-transparent-logo-40rem" style="margin: 0 5rem 110rem 80rem;">
-                <img src="./assets/cr-black-transparent-logo.png" alt="Logo da CyberRain da seção sobre a CyberRain"
-                    class="cr-black-transparent-logo cr-black-transparent-logo-20rem"
-                    style="margin: 17rem -5rem 80rem 80rem;">
-                <img src="./assets/cr-black-transparent-logo.png" alt="Logo da CyberRain da seção sobre a CyberRain"
-                    class="cr-black-transparent-logo cr-black-transparent-logo-20rem" style="margin: 170rem 50rem 80rem 0;">
+
+        <section class="contact-elements-email">
+            <div class="contact-type">
+                <span>Email</span>
             </div>
-            <div class="cr-about-wrapper-container">
-                <div class="cr-about-wrapper">
-                    <div class="cr-identity-wrapper">
-                        <span class="cr-identity-name">CyberRain</span>
-                        <span class="cr-identity-number">9611</span>
-                    </div>
-                    <hr class="thick-line">
-                    <p class="cr-about-text">A equipe CyberRain é pioneira em Joinville no campeonato da FIRST Robotics
-                        Competition (FRC). Composta por alunos da Escola SESI de Referência, com idade média entre 15 e 17
-                        anos, a equipe tem se destacado por sua dedicação, criatividade e inovação.</p>
-                    <div class="cr-about-buttons-wrapper">
-                        <a href="about-us.html" class="default-button-width purple-filled-button">Conheça-nos</a>
-                        <a href="contact.html" class="default-button-width purple-unfilled-button">Contato</a>
-                    </div>
-                </div>
+            <hr />
+            <div class="contact">
+                <img src="/src/assets/nimbus_marketing.svg" alt="contact-icon">
+                <a href="mailto:contact@9611.team" target="_blank">contact@9611.team</a>
+            </div>
+            <div class="contact">
+                <img src="/src/assets/mdi_brain.svg" alt="brain-icon">
+                <a href="mailto:mentorship@9611.team" target="_blank">mentorship@9611.team</a>
+            </div>
+            <div class="contact">
+                <img src="/src/assets/material-symbols_computer-outline.svg" alt="computer-icon">
+                <a href="mailto:programming@9611.team" target="_blank">programming@9611.team</a>
+            </div>
+            <div class="contact">
+                <img src="/src/assets/bxs_pen.svg" alt="pen-icon">
+                <a href="mailto:design@9611.team" target="_blank">design@9611.team</a>
             </div>
         </section>
-        <section class="crescendo-about-section">
-            <div class="crescendo-about-texts-wrapper">
-                <div class="creascendo-meaning-wrapper">
-                    <span class="creascendo-meaning-context">Na Música:</span>
-                    <span class="crescendo-meaning">“AUMENTO GRADUAL DA INTENSIDADE SONORA”</span>
-                    <div class="crescendo-meaning-source-wrapper">
-                        <span class="crescendo-meaning-source">"crescendo", in Dicionário Priberam da Língua Portuguesa [em
-                            linha],</span>
-                        <span class="crescendo-meaning-source">
-                            2008-2023, https://dicionario.priberam.org/crescendo.</span>
-                    </div>
-                </div>
-                <p class="crescendo-about-text">A nova temporada da FRC chegou e com ela muita inovação! Nossa equipe está a
-                    todo vapor e dando o nosso melhor para a competição! Aguardamos vocês em Brasília!!</p>
+
+        <section class="contact-elements">
+            <div class="contact-type">
+                <span>Tecnico</span>
+            </div>
+            <hr />
+            <div class="contact">
+                <img src="./assets/tba-lamp.svg" alt="Ícone da The Blue Alliance">
+                <a href="https://www.thebluealliance.com/team/9611" target="_blank">[TBA] #9611</a>
+            </div>
+            <div class="contact">
+                <img src="./assets/bi_github.svg" alt="Ícone da The Blue Alliance">
+                <a href="https://www.thebluealliance.com/team/9611" target="_blank">[Github] frc9611</a>
             </div>
         </section>
-        <section class="first-about-section">
-            <img src="./assets/first-logo.png" alt="Logo da FIRST" class="first-about-section-logo">
-            <p class="first-about-text">A FIRST® é uma ONG sem fins lucrativos que tem como objetivo criar e preparar a nova
-                geração de líderes e profissionais capazes de criar soluções para os grandes problemas que assolam nossa
-                sociedade nos dias atuais.</p>
-        </section>
-    </main>
+    </section><!--flex-->
 
     <footer class="footer">
         <div class="footer-sections-grouper">
@@ -242,5 +225,6 @@
         </div>
     </div>
 </body>
+
 
 </html>
