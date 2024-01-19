@@ -71,3 +71,19 @@
     width: 6rem;
     aspect-ratio: 1 / 1;
 }
+
+.waypoint {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    font-size: 1px;
+}
+
+.soon-tm::after {
+    content: "(Em Breve)";
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--cr-purple);
+    font-weight: 900;
+    margin: 0 0 0 1rem;
+}
