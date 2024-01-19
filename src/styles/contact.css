@@ -98,3 +98,38 @@ hr {
 footer {
     margin-top: auto;
 }
+
+@media (max-width: 1150px) {
+
+    .title > span {
+        font-size: 20rem;
+    }
+    .subtitle > span {
+        font-size: 6rem;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        gap: 8rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .title > span {
+        font-size: 16rem;
+    }
+    .subtitle > span {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .title > span {
+        font-size: 14rem;
+    }
+    .subtitle > span {
+        font-size:3.5rem;
+    }
+}
