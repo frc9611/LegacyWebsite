@@ -87,3 +87,9 @@
     font-weight: 900;
     margin: 0 0 0 1rem;
 }
+
+.disabled {
+    opacity: .5;
+    cursor: default;
+    pointer-events: none;
+}
