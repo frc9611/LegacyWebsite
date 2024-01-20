@@ -129,13 +129,6 @@
     padding: 25rem 0;
 }
 
-.cr-info-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 4rem;
-}
-
 .logo-wrapper {
     background-color: var(--cr-purple);
     border-radius: 50%;

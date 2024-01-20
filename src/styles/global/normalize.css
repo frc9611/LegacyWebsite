@@ -21,13 +21,7 @@
 
 /* Calibrations of default styles */
 
-/* header {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-} */
-
-main {
+main { 
     height: fit-content;
     min-height: 100vh;
 }
