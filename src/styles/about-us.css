@@ -198,15 +198,6 @@
     }
 }
 
-@media (max-width: 300px) {
-    .cr-info-wrapper {
-        justify-content: center;
-        margin: 0 4rem;
-        text-align: center;
-        flex-direction: column;
-    }
-}
-
 /* CyberRain Team Photo */
 
 .cr-team-photo {
