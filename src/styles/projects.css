@@ -20,6 +20,12 @@
     --ui-ultra-light-blue: #d3e8ff;
 }
 
+/* Calibrations */
+
+* {
+    scroll-behavior: smooth;
+}
+
 /* About Projects */
 
 .about-projects-section {
