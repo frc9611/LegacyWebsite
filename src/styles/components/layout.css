@@ -102,6 +102,12 @@
     content: "🌝";
 }
 
+.menu-page.highlighted-text::after {
+    background-color: var(--cr-yellow);
+    display: block;
+    width: 100%;
+}
+
 .menu-page:hover::after {
     display: block;
     width: 100%;

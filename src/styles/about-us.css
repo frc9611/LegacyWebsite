@@ -25,7 +25,9 @@
 /* Modded Header */
 
 .modded-header {
-    background-color: #271129;
+    position: relative;
+    z-index: 10;
+    box-shadow: var(--black-text) 0 0 7rem;
 }
 
 /* CyberRain logo section */
@@ -193,15 +195,6 @@
 
     .cr-explanation-bottom-text {
         font-size: 4rem;
-    }
-}
-
-@media (max-width: 300px) {
-    .cr-info-wrapper {
-        justify-content: center;
-        margin: 0 4rem;
-        text-align: center;
-        flex-direction: column;
     }
 }
 
