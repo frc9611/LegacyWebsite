@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.root": "./src/"
+    "liveServer.settings.root": "./src/",
+    "liveServer.settings.port": 5555
 }
