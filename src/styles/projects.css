@@ -197,6 +197,10 @@
     width: fit-content;
 }
 
+.soon-tm {
+    pointer-events: none;
+}
+
 @media (max-width: 600px) {
     .projects-list-section {
         padding: 25rem 0;
