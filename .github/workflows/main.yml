@@ -1,8 +1,15 @@
 name: Deploy via ftp
 on:
   push:
+    paths:
+    - "src/**"
     branches:
-      - 'main'
+    - "main"
+  pull_request:
+    paths: 
+    - "src/**"
+    branches:
+    - "main"
 jobs:
   deploy:
     name: Deploy
