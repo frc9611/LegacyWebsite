@@ -266,6 +266,10 @@
         width: 30rem;
         aspect-ratio: 3 / 4;
     }
+
+    .cr-value-description {
+        height: fit-content;
+    }
 }
 
 /* CyberRain Members Showcase */

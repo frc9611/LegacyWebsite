@@ -188,7 +188,7 @@
 }
 
 .crescendo-about-text {
-    margin-top: 4rem;
+    margin-top: 10rem;
     width: 110rem;
     color: var(--white-text);
     font-size: 4rem;
@@ -284,7 +284,7 @@
     content: "#";
 }
 
-.cr-about-text {
+.cr-about-text, .cr-about-text > em {
     color: var(--soft-black-text);
     font-size: 5rem;
     width: 100%;
