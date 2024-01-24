@@ -284,7 +284,7 @@
     content: "#";
 }
 
-.cr-about-text, .cr-about-text > em {
+.cr-about-text {
     color: var(--soft-black-text);
     font-size: 5rem;
     width: 100%;
