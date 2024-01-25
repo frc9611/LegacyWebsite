@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./styles/contact.css">
     <!-- Components -->
     <script src="./javascripts/components/mobile-dropdown-menu.js" defer></script>
+    <script src="./javascripts/animations-contact.js"></script>
     <link rel="stylesheet" href="./styles/components/layout.css">
     <link rel="stylesheet" href="./styles/components/loading.css">
     <link rel="stylesheet" href="./styles/components/common-ui.css">
@@ -24,7 +25,7 @@
 
 <body>
     <header class="header">
-        <div class="cr-info-wrapper">
+        <a class="cr-info-wrapper" href=".">
             <img src="./assets/cr-header-logo.png" alt="Logo da CyberRain" class="logo">
             <div class="team-name-wrapper">
                 <span class="cr-team-number">#9611</span>
@@ -46,70 +47,68 @@
         </button>
     </header>
 
-    <section class="title-subtitle">
-        <div class="title">
-            <span>Get in</span> <span class="yellow">Touch</span>
-        </div>
-        <div class="subtitle">
-            <span>Quer mandar uma mensagem, conhecer-nos ou nos patrocinar?</span>
-        </div>
-    </section>
-
-    <section class="flex-container">
-        <section class="contact-elements">
-            <div class="contact-type">
-                <span>Redes Sociais</span>
+    <main>
+        <section class="title-subtitle">
+            <div class="title">
+                <span>Get in</span> <span class="yellow">Touch</span>
             </div>
-            <hr />
-            <div class="contact">
-                <img src="./assets/ri-instagram-line.svg" alt="instagram-icon">
-                <a href="https://www.instagram.com/cyberainfrc/" target="_blank">@cyberain</a>
-            </div>
-
-            <div class="contact">
-                <img src="./assets/ri-tiktok-line.svg" alt="tiktok-icon">
-                <a href="https://www.tiktok.com/@cyberrainfrc?" target="_blank">@cyberrainfrc</a>
+            <div class="subtitle">
+                <span>Quer mandar uma mensagem, conhecer-nos ou nos patrocinar?</span>
             </div>
         </section>
-
-        <section class="contact-elements-email">
-            <div class="contact-type">
-                <span>Email</span>
-            </div>
-            <hr />
-            <div class="contact">
-                <img src="./assets/nimbus-marketing.svg" alt="contact-icon">
-                <a href="mailto:contact@9611.team" target="_blank">contact@9611.team</a>
-            </div>
-            <div class="contact">
-                <img src="./assets/mdi-brain.svg" alt="brain-icon">
-                <a href="mailto:mentorship@9611.team" target="_blank">mentorship@9611.team</a>
-            </div>
-            <div class="contact">
-                <img src="./assets/material-symbols-computer-outline.svg" alt="computer-icon">
-                <a href="mailto:programming@9611.team" target="_blank">programming@9611.team</a>
-            </div>
-            <div class="contact">
-                <img src="./assets/bxs-pen.svg" alt="pen-icon">
-                <a href="mailto:design@9611.team" target="_blank">design@9611.team</a>
-            </div>
-        </section>
-
-        <section class="contact-elements">
-            <div class="contact-type">
-                <span>Tecnico</span>
-            </div>
-            <hr />
-            <div class="contact">
-                <img src="./assets/tba-lamp.svg" alt="Ícone da The Blue Alliance">
-                <a href="https://www.thebluealliance.com/team/9611" target="_blank">[TBA] #9611</a>
-            </div>
-            <div class="contact">
-                <img src="./assets/bi-github.svg" alt="Ícone da The Blue Alliance">
-                <a href="https://www.thebluealliance.com/team/9611" target="_blank">[Github] frc9611</a>
-            </div>
-        </section>
-    </section><!--flex-->
+        <section class="flex-container">
+            <section class="contact-elements">
+                <div class="contact-type">
+                    <span>Redes Sociais</span>
+                </div>
+                <hr />
+                <div class="contact">
+                    <img src="./assets/ri-instagram-line.svg" alt="instagram-icon">
+                    <a href="https://www.instagram.com/cyberainfrc/" target="_blank">@cyberain</a>
+                </div>
+                <div class="contact">
+                    <img src="./assets/ri-tiktok-line.svg" alt="tiktok-icon">
+                    <a href="https://www.tiktok.com/@cyberrainfrc?" target="_blank">@cyberrainfrc</a>
+                </div>
+            </section>
+            <section class="contact-elements-email contact-elements">
+                <div class="contact-type">
+                    <span>Email</span>
+                </div>
+                <hr />
+                <div class="contact">
+                    <img src="./assets/nimbus-marketing.svg" alt="contact-icon">
+                    <a href="mailto:contact@9611.team" target="_blank">contact@9611.team</a>
+                </div>
+                <div class="contact">
+                    <img src="./assets/mdi-brain.svg" alt="brain-icon">
+                    <a href="mailto:mentorship@9611.team" target="_blank">mentorship@9611.team</a>
+                </div>
+                <div class="contact">
+                    <img src="./assets/material-symbols-computer-outline.svg" alt="computer-icon">
+                    <a href="mailto:programming@9611.team" target="_blank">programming@9611.team</a>
+                </div>
+                <div class="contact">
+                    <img src="./assets/bxs-pen.svg" alt="pen-icon">
+                    <a href="mailto:design@9611.team" target="_blank">design@9611.team</a>
+                </div>
+            </section>
+            <section class="contact-elements">
+                <div class="contact-type">
+                    <span>Tecnico</span>
+                </div>
+                <hr />
+                <div class="contact">
+                    <img src="./assets/tba-lamp.svg" alt="Ícone da The Blue Alliance">
+                    <a href="https://www.thebluealliance.com/team/9611" target="_blank">[TBA] #9611</a>
+                </div>
+                <div class="contact">
+                    <img src="./assets/bi-github.svg" alt="Ícone da The Blue Alliance">
+                    <a href="https://www.thebluealliance.com/team/9611" target="_blank">[Github] frc9611</a>
+                </div>
+            </section>
+        </section><!--flex-->
+    </main>
 
     <footer class="footer">
         <div class="footer-sections-grouper">
