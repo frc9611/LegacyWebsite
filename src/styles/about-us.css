@@ -30,25 +30,14 @@
     box-shadow: var(--black-text) 0 0 7rem;
 }
 
-/* CyberRain logo section */
-
-.cr-theme-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    aspect-ratio: 10 / 3.33;
-    background: url("./../assets/cool-cyberrain-bg.png");
-    background-size: cover;
-}
-
 /* CyberRain values */
 
 .cr-our-values {
     display: flex;
     justify-content: center;
-    background-image: url("./../assets/cr-team.png");
+    background-image: url("./../assets/team/cr-team-1.JPG");
     background-size: cover;
+    background-position: center;
 }
 
 .cr-our-values-backdrop {
@@ -203,8 +192,10 @@
 .cr-team-photo {
     width: 100%;
     aspect-ratio: 10 / 3;
-    background: url("./../assets/cr-team.png");
+    background: url("./../assets/team/cr-team-3.JPG");
+    background-position: center;
     background-size: cover;
+    filter: brightness(.5);
 }
 
 /* CyberRain Moments */
