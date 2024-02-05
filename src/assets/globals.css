@@ -1,0 +1,25 @@
+@import url(./variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.bnt-purple-filled-lt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in;
+    height: 42px;
+    width: fit-content;
+    color: var(--cr-bg);
+    background-color: var(--cr-lt-purple);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    border: 4px var(--cr-lt-purple);
+    border-radius: 8px;
+    padding: 4px 20px;
+}
+
+@media (max-width: 1360px) {
+    .bnt-purple-filled-lt {
+        height: 32px;
+    }
+}
