@@ -23,12 +23,25 @@
 /* Header */
 
 .header {
+    transition: top 0.2s ease-out;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     background-color: var(--cr-purple);
     padding: 0 8rem;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    height: 30rem;
+}
+
+.header.scrollHide {
+    top: -30rem;
+}
+
+.hideable-header {
+    position: sticky;
 }
 
 .cr-info-wrapper {
