@@ -1,5 +1,6 @@
-# CyberRain Website 🤖⛈
+# CyberRain Legacy Website 🤖⛈
 
-> The official repository for the website of FRC team #9611: **CyberRain**
+> The official repository for the og website of FRC team #9611: **CyberRain**
 
-You can check it with the following link: https://9611.team
+We got a new one, so it is not possible to visit the legacy version online anymore.
+You can check the newer website here: https://www.9611.team
